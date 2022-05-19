@@ -4,6 +4,7 @@ import requests
 import json
 import random
 from replit import db
+from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -113,4 +114,5 @@ async def on_message(message):
       encouragements = db["encouragements"]
     await message.channel.send(encouragements) 
 
+keep_alive()
 client.run(my_secret)
