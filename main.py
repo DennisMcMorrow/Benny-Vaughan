@@ -7,7 +7,7 @@ from replit import db
 
 client = discord.Client()
 
-my_secret = os.environ['gooknuke']
+my_secret = os.environ['secret']
 
 url1 = 'https://api.jokes.one/jod?category=knock-knock'
 url2 = "https://zenquotes.io/api/random"
